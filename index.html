@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Application</title>
+</head>
+<body>
+    <div class="input-info">
+        <div class="input-type">
+            <button class="single-type">Single Match</button>
+            <button class="board-type">Board Match</button>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 50%">
+                <label for="number">Nhập số đội thi đấu</label>
+                <input id="number" type="number" placeholder="">
+                <button class="submit-number">Xác Nhận</button>
+                <label for="number-board">Nhập số bảng thi đấu</label>
+                <input id="number-board" type="number" placeholder="">
+                <button class="submit-number-board">Xác Nhận</button>
+                <p>Nhập danh sách các đội</p>
+                <div class="list-team" style="display: grid; grid-template-columns: repeat(2, 1fr); max-height: 300px; overflow: overlay;">
+                </div>
+            </div>
+            <div class="list-match" style="flex: 1; max-height: 200px; overflow: overlay;"></div>
+        </div>
+        <div>
+            <h3>Nhập tỉ số trận đấu</h3>
+            <label for="ten-doi-1">Nhập tên đội 1</label>
+            <input id="ten-doi-1" type="text" name="">
+            <label>Tỉ số</label>
+            <input type="number" name="" id="point-1">
+            <label>:</label>
+            <input type="number" name="" id="point-2">
+            <label for="ten-doi-1">Nhập tên đội 2</label>
+            <input id="ten-doi-2" type="text" name="">
+            <button class="submit-match">Xác nhận trận đấu</button>
+        </div>
+    </div>
+    <div class="chart" style="display: grid; grid-template-columns: repeat(2, 1fr);"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
